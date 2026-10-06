@@ -1,0 +1,144 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+body {
+    background-color: #000;
+    font-family: 'JetBrains Mono', 'Space Grotesk', 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+========================= */
+
+.site-header {
+    background-color: #000;
+}
+.main-nav #brand-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand-name {
+    color: #fff;
+}
+
+
+/* Botón del menú */
+
+.menu-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+
+/* Botón XE */
+
+.xe-button {
+    background-color: #39ff14;
+    border: none;
+}
+
+.xe-button a {
+    color: #070708;
+    text-decoration: none;
+}
+
+.xe-button:hover a {
+    color: rgb(179, 12, 179);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background-color: #000;
+}
+
+.hero-info {
+    display: flex;
+    gap: 20px;
+}
+
+.protocol-label {
+    color: #39ff14;
+}
+
+.system-version {
+    color: gray;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-description {
+    color: #fff;
+}
+
+.hero-title {
+    color: #fff;
+    font-family: 'Anton', 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-slogan {
+    color: #39ff14;
+}
+
+
+/* =========================
+   ESTADÍSTICAS
+========================= */
+
+.product-stats {
+    color: #fff;
+}
+
+.stat-label {
+    color: gray;
+}
+
+.stat-value {
+    color: #39ff14;
+}
+
+.bpm-value {
+    color: #fff;
+}
+
+
+/* =========================
+   ADVERTENCIA
+========================= */
+
+.warning-message {
+    color: #fff;
+}
+
+
+/* =========================
+   BOTONES PRINCIPALES
+========================= */
+
+.hero-actions button {
+    background-color: #39ff14;
+}
