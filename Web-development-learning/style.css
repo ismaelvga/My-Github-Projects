@@ -22,6 +22,9 @@ body {
 .site-header {
     background-color: #070708;
     padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .main-nav {
@@ -74,6 +77,23 @@ body {
 
     cursor: pointer;
 }
+
+
+/*  Boton flotante  */
+ 
+.xe-fixed {
+    position: fixed;
+
+    right: 20px;
+    bottom: 90px;
+
+    z-index: 1000;
+
+    width: 100px;
+    height: auto;
+}
+
+
 
 
 /* Botón XE */
@@ -142,6 +162,8 @@ body {
 
 .hero-content {
     text-align: center;
+    top: 20px;
+    position: relative;
 }
 
 .hero-description {
@@ -226,9 +248,33 @@ body {
 
 /* Estadísticas */
 
-.stat {
+.stat-octane-level {
     margin: 20px 0;
+    background-color: #000;
+    width: 15%;
+    padding: 15px;
+    border-bottom: 4px solid #39ff14;
+    border-right: 4px solid #39ff14;
+
+    position: relative;
+    left: 250px;
+    bottom: 450px;;
+
 }
+
+.stat-bpm-boost {
+    margin: 20px 0;
+    width: 15%;
+    padding: 15px;
+    border-bottom: 4px solid purple;
+    border-right: 4px solid purple;
+    background-color: #000;
+
+    position: relative;
+    left: 730px;
+    bottom: 250px;;
+}
+
 
 .stat-label {
     display: block;
@@ -263,6 +309,9 @@ body {
     margin: 30px auto 0;
 
     text-align: center;
+
+    position: relative;
+    bottom: 100px;
 }
 
 .warning-message {
@@ -312,7 +361,8 @@ body {
 /* BOTONES PRINCIPALES */
 
 .hero-actions {
-    margin-top: 50px;
+    position: relative;
+    bottom: 100px;
 }
 
 
