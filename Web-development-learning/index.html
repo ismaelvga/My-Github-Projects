@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,19 +13,18 @@
 
 <body>
 
-    <!-- =========================
-         BARRA DE NAVEGACIÓN
-    ========================== -->
-
     <header class="site-header">
 
         <nav class="main-nav">
 
-            <!-- Botón del menú -->
-
-            <button class="menu-button" id="menu-button">
-
-                <svg xmlns="http://www.w3.org/2000/svg"
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Abrir menú"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -32,25 +32,26 @@
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
-                    stroke-linejoin="round">
-
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-
+                    stroke-linejoin="round"
+                >
+                    <path
+                        stroke="none"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                    />
                     <path d="M4 20h16" />
                     <path d="M4 12h16" />
                     <path d="M4 4h16" />
-
                 </svg>
-
             </button>
 
 
-            <!-- Logo -->
+            
+            <a href="index.html" class="brand-link">
 
-            <a href="#" class="brand-link">
-
-                <img id="brand-logo"
-                    src="/images/Logo.webp"
+                <img
+                    id="brand-logo"
+                    src="images/Logo.webp"
                     alt="Logo de Guepardex"
                 >
 
@@ -61,33 +62,20 @@
             </a>
 
 
-            <!-- Botón XE -->
-
-            <button class="xe-button">
-
-                <a href="#XE">
-                    Consigue XE
-                </a>
-
-            </button>
+            <a href="#xe" class="xe-button">
+                Consigue XE
+            </a>
 
         </nav>
 
     </header>
 
 
-    <!-- =========================
-         CONTENIDO PRINCIPAL
-    ========================== -->
 
     <main>
 
-        <!-- HERO -->
 
         <section class="hero">
-
-
-            <!-- Información del sistema -->
 
             <div class="hero-info">
 
@@ -100,9 +88,6 @@
                 </span>
 
             </div>
-
-
-            <!-- Presentación del producto -->
 
             <div class="hero-content">
 
@@ -122,27 +107,18 @@
 
             </div>
 
-
-            <!-- =========================
-                 INFORMACIÓN DEL PRODUCTO
-            ========================== -->
-
-            <section class="product-stats">
-
-
-                <!-- Imagen del producto -->
+            <section class="product-stats" id="xe">
 
                 <div class="product-image">
 
                     <img
-                        src="/images/Latita-1.webp"
+                        id="cheetah-chug-lata"
+                        src="images/Clipboard-Image-copy.png"
                         alt="Lata de Cheetah Chug"
                     >
 
                 </div>
 
-
-                <!-- Nivel de octanaje -->
 
                 <div class="stat">
 
@@ -157,8 +133,6 @@
                 </div>
 
 
-                <!-- Aumento de BPM -->
-
                 <div class="stat">
 
                     <span class="stat-label">
@@ -171,49 +145,48 @@
 
                 </div>
 
-
-                <!-- Advertencia -->
-
                 <div class="warning-message">
 
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round">
+                    <span class="warning-text">
 
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                            />
+                            <path d="M12 9v4" />
+                            <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636-2.87l-8.106-13.536a1.914 1.914 0 0 0 -3.274 0" />
+                            <path d="M12 16h.01" />
+                        </svg>
 
-                        <path d="M12 9v4" />
+                        PELIGRO: SU CONSUMO NO ES APTO PARA PERSONAS NORMALES!
 
-                        <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
-
-                        <path d="M12 16h.01" />
-
-                    </svg>
-
-                    <span>
-                        PELIGRO: SU CONSUMO NO ES APTO PARA PERSONAS NORMALES
                     </span>
 
                 </div>
 
             </section>
 
-
-            <!-- =========================
-                 ACCIONES
-            ========================== -->
-
             <section class="hero-actions">
 
-                <button>
+                <button
+                    class="get-xe-button"
+                    type="button"
+                >
 
-                    <svg xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -221,25 +194,30 @@
                         stroke="currentColor"
                         stroke-width="2"
                         stroke-linecap="round"
-                        stroke-linejoin="round">
-
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        />
                         <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
-
                     </svg>
 
-                    CONSIGUE GUEPARDEX AHORA
+                    <span class="get-xe-text">
+                        CONSIGUE XE AHORA
+                    </span>
 
                 </button>
 
 
-                <span>
-                    Descubre la leyenda
-                </span>
-
-
-                <button>
+                <button
+                    class="legend-button"
+                    type="button"
+                >
+                    <span class="legend-link">
+                        DESCUBRE LA LEYENDA
+                    </span>
                 </button>
 
             </section>
