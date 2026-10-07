@@ -1,4 +1,4 @@
-# My GitHub Projects
+# Learning
 
 A collection of personal projects organized by project inside `projects/`.
 
