@@ -1,27 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Guepardex: página parodia en honor a Kick Buttowski. Cheetah Chug, la bebida energética extrema."
+    >
+    <meta name="author" content="Ismael Valdez">
 
-    <title>Guepardex</title>
+    <title>Guepardex | Cheetah Chug</title>
+
+    <link rel="icon" href="images/Logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
-<body>
+<body id="inicio">
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Principal">
 
             <button
                 class="menu-button"
                 id="menu-button"
                 type="button"
                 aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu-drawer"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -33,20 +51,15 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    aria-hidden="true"
                 >
-                    <path
-                        stroke="none"
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                    />
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M4 20h16" />
                     <path d="M4 12h16" />
                     <path d="M4 4h16" />
                 </svg>
             </button>
 
-
-            
             <a href="index.html" class="brand-link">
 
                 <img
@@ -61,23 +74,34 @@
 
             </a>
 
-
             <a href="#xe" class="xe-button">
                 Consigue XE
             </a>
 
         </nav>
 
+        <div class="menu-drawer" id="menu-drawer">
+            <ul class="menu-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#xe">Cheetah Chug</a></li>
+                <li><a href="#manifiesto">Manifiesto</a></li>
+                <li><a href="#ingredientes">Composición</a></li>
+                <li><a href="#incidentes">Incidentes</a></li>
+                <li><a href="#leyenda">La leyenda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
     </header>
 
 
+    <main id="contenido">
 
-    <main>
-        <div>
-            <a href="#" alt="Extreme Emergency">
-                <img class="xe-fixed" src="/images/XE.png">
-            </a>
-        </div>
+        <a href="#xe" class="xe-fixed-link" aria-label="Extreme Emergency: ir a XE">
+            <img class="xe-fixed" src="images/XE.png" alt="Extreme Emergency">
+        </a>
+
+        <!-- HERO -->
 
         <section class="hero">
 
@@ -113,39 +137,33 @@
 
             <section class="product-stats" id="xe">
 
-                <div class="product-image">
+                <div class="product-stage">
 
-                    <img
-                        id="cheetah-chug-lata"
-                        src="images/Clipboard-Image-copy.png"
-                        alt="Lata de Cheetah Chug"
-                    >
+                    <div class="product-image">
+                        <img
+                            id="cheetah-chug-lata"
+                            src="images/Clipboard-Image-copy.png"
+                            alt="Lata de Cheetah Chug"
+                        >
+                    </div>
 
-                </div>
+                    <div class="stat-octane-level">
+                        <span class="stat-label">
+                            OCTANE LEVEL
+                        </span>
+                        <strong class="stat-value">
+                            1400%
+                        </strong>
+                    </div>
 
-
-                <div class="stat-octane-level">
-
-                    <span class="stat-label">
-                        OCTANE LEVEL
-                    </span>
-
-                    <strong class="stat-value">
-                        1400%
-                    </strong>
-
-                </div>
-
-
-                <div class="stat-bpm-boost">
-
-                    <span class="stat-label">
-                        BPM BOOST
-                    </span>
-
-                    <strong class="bpm-value">
-                        +180 BPM
-                    </strong>
+                    <div class="stat-bpm-boost">
+                        <span class="stat-label">
+                            BPM BOOST
+                        </span>
+                        <strong class="bpm-value">
+                            +180 BPM
+                        </strong>
+                    </div>
 
                 </div>
 
@@ -163,18 +181,15 @@
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
+                            aria-hidden="true"
                         >
-                            <path
-                                stroke="none"
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                            />
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M12 9v4" />
                             <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636-2.87l-8.106-13.536a1.914 1.914 0 0 0 -3.274 0" />
                             <path d="M12 16h.01" />
                         </svg>
 
-                        PELIGRO: SU CONSUMO NO ES APTO PARA PERSONAS NORMALES!
+                        PELIGRO: SU CONSUMO NO ES APTO PARA PERSONAS QUE NO SIGAN LAS LEYES DE LO INCREIBLe!
 
                     </span>
 
@@ -182,12 +197,9 @@
 
             </section>
 
-            <section class="hero-actions">
+            <div class="hero-actions">
 
-                <button
-                    class="get-xe-button"
-                    type="button"
-                >
+                <a class="get-xe-button" href="#pedido">
 
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -199,12 +211,9 @@
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
+                        aria-hidden="true"
                     >
-                        <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                        />
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
                     </svg>
 
@@ -212,24 +221,409 @@
                         CONSIGUE XE AHORA
                     </span>
 
-                </button>
+                </a>
 
-
-                <button
-                    class="legend-button"
-                    type="button"
-                >
+                <a class="legend-button" href="#leyenda">
                     <span class="legend-link">
                         DESCUBRE LA LEYENDA
                     </span>
-                </button>
+                </a>
 
-            </section>
+            </div>
+
+        </section>
+
+        <div class="warning-line" aria-hidden="true"></div>
+
+        <!-- CINTA -->
+
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>// Cheetah Chug</span>
+                <span>// Octane 1400%</span>
+                <span>// +180 BPM</span>
+                <span>// Sin frenos</span>
+                <span>// Casco puesto</span>
+                <span>// Cheetah Chug</span>
+                <span>// Octane 1400%</span>
+                <span>// +180 BPM</span>
+                <span>// Sin frenos</span>
+                <span>// Casco puesto</span>
+            </div>
+        </div>
+
+
+        <!-- MANIFIESTO -->
+
+        <section class="section" id="manifiesto">
+
+            <span class="section-label">[ MANIFIESTO.TXT ]</span>
+
+            <div class="manifesto-grid">
+
+                <div class="manifesto-text">
+
+                    <h2 class="section-title">
+                        ¿Cómo nació Guepardex?
+                    </h2>
+
+                    <p>
+                        Todo comenzó con una pregunta que probablemente nunca debió hacerse:
+
+<strong>¿Qué pasaría si extrajéramos los fluidos de un guepardo y los utilizáramos como bebida energizante?</strong>
+
+La respuesta superó todas nuestras expectativas.
+
+Tras años de investigaciones altamente cuestionables, múltiples explosiones inexplicables y la desaparición de varios científicos durante las pruebas, nació Guepardex.
+
+Los primeros resultados fueron sorprendentes.
+
+La bebida demostró ser capaz de proporcionar suficiente energía para alimentar desde un Concorde hasta un montacargas industrial, pasando por una impresionante variedad de vehículos de fabricación rusa.
+
+Pero eso era apenas el comienzo.
+
+Durante las pruebas iniciales se descubrió un efecto completamente inesperado: individuos que habían permanecido clínicamente muertos durante hasta 6 horas presentaron signos de actividad después de consumir Guepardex.
+
+Los científicos, en lugar de detener el experimento, decidieron continuar.
+
+Los consumidores comenzaron a desarrollar un instinto animal extremadamente avanzado, reflejos fuera de lo normal y capacidades físicas que los investigadores clasificaron oficialmente como:
+
+“Definitivamente no humanas.”
+
+También se registraron casos de individuos capaces de correr a velocidades absurdas, reaccionar antes de que ocurrieran los acontecimientos y tomar decisiones completamente cuestionables a velocidades impresionantes.
+
+Ante estos resultados, el proyecto fue clasificado como Emergencia Extrema.
+
+Y así nació Guepardex.
+                    </p>
+                      <span class="section-label">🏆 Respaldado por profesionales</span>
+                    <p>
+                        Guepardex cuenta con la aprobación de numerosos profesionales de dudosa reputación, entre ellos Chuck Norris, John Wick, Rock Callahan, Billy Stumps, El Muerto Dave, Kick Buttowski, Gunther Magnuson, Brad Buttowski y otros expertos altamente capacitados.
+                    </p>
+
+                    <strong>Si ellos lo aprueban, ¿qué podría salir mal?</strong>
+
+                </div>
+
+                <ol class="manifesto-rules">
+                    <li>
+                       Clasificado
+                        <span>Durante una investigación militar de la década de 1940 apareció un informe clasificado sobre un misterioso compuesto utilizado en experimentos de rendimiento humano. El documento mencionaba una sustancia capaz de aumentar los reflejos, la resistencia y la velocidad hasta niveles considerados imposibles. Décadas después, los investigadores encontraron una anotación escrita a mano al final del expediente:
+
+«NO VOLVER A UTILIZAR. EL SUJETO HA CORRIDO HASTA POLONIA Y SE NIEGA A REGRESAR.»
+
+El archivo permaneció olvidado durante décadas. Cuando finalmente fue analizado, los científicos descubrieron que la fórmula coincidía en un 98,7 % con Guepardex.
+
+El 1,3 % restante continúa clasificado.
+
+Sin embargo, existen rumores sobre un proyecto denominado XE, cuyos documentos describen posibles aplicaciones militares de la fórmula. Ninguno de esos documentos ha podido ser verificado.
+
+Hasta ahora.</span>
+                    </li>
+                    <li>
+                        Sin frenos
+                        <span>Frenar es para los que tienen tiempo.</span>
+                    </li>
+                    <li>
+                        Más alto, más rápido
+                        <span>Y si sale mal, fue con estilo.</span>
+                    </li>
+                </ol>
+
+            </div>
+
+        </section>
+
+        <div class="warning-line" aria-hidden="true"></div>
+
+
+        <!-- COMPOSICIÓN -->
+
+        <section class="section" id="ingredientes">
+
+            <span class="section-label">[ COMPOSICIÓN: CLASIFICADA ]</span>
+
+            <h2 class="section-title">
+                Qué lleva la lata
+            </h2>
+
+            <div class="ingredients-grid">
+
+                <article class="ingredient-card">
+                    <h3 class="ingredient-name">Taurina extrema</h3>
+                    <strong class="ingredient-amount">9000 mg</strong>
+                    <p class="ingredient-note">
+                        Suficiente para que tu pulso tenga pulso propio.
+                    </p>
+                </article>
+
+                <article class="ingredient-card">
+                    <h3 class="ingredient-name">Cafeína turbo</h3>
+                    <strong class="ingredient-amount">1400%</strong>
+                    <p class="ingredient-note">
+                        Del valor diario recomendado para una persona normal.
+                    </p>
+                </article>
+
+                <article class="ingredient-card">
+                    <h3 class="ingredient-name">Extracto de guepardo</h3>
+                    <strong class="ingredient-amount">100% falso</strong>
+                    <p class="ingredient-note">
+                        Ningún guepardo participó. Ninguno nos alcanzó.
+                    </p>
+                </article>
+
+                <article class="ingredient-card">
+                    <h3 class="ingredient-name">Adrenalina embotellada</h3>
+                    <strong class="ingredient-amount">+180 BPM</strong>
+                    <p class="ingredient-note">
+                        Medido con un reloj que dejó de funcionar a mitad de prueba.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- INCIDENTES -->
+
+        <section class="section" id="incidentes">
+
+            <span class="section-label">[ LOG: CHEETAH_CHUG.TEST ]</span>
+
+            <h2 class="section-title">
+                Registro de incidentes
+            </h2>
+
+            <div class="incident-log" role="region" aria-label="Registro de pruebas">
+
+                <div class="incident-log-bar">
+                    <span>SYS.VER // 2004.X</span>
+                    <span>Pruebas de campo</span>
+                </div>
+
+                <ul class="incident-lines">
+                    <li>
+                        <span class="incident-time">00:01</span>
+                        Sujeto 01 abre la lata. <span class="incident-ok">[OK]</span>
+                    </li>
+                    <li>
+                        <span class="incident-time">00:03</span>
+                        Sujeto 01 cruza el patio en 0.4 segundos. <span class="incident-ok">[OK]</span>
+                    </li>
+                    <li>
+                        <span class="incident-time">00:04</span>
+                        Sujeto 01 intenta frenar. <span class="incident-fail">[FALLO]</span>
+                    </li>
+                    <li>
+                        <span class="incident-time">00:05</span>
+                        Cerca del vecino: destruida. <span class="incident-fail">[FALLO]</span>
+                    </li>
+                    <li>
+                        <span class="incident-time">00:06</span>
+                        Sujeto 01 pide otra lata. <span class="incident-ok">[OK]</span>
+                    </li>
+                    <li class="cursor">
+                        <span class="incident-time">00:07</span>
+                        Esperando siguiente prueba
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <div class="warning-line" aria-hidden="true"></div>
+
+
+        <!-- LEYENDA -->
+
+        <section class="section" id="leyenda">
+
+            <span class="section-label">[ ARCHIVO: LA_LEYENDA ]</span>
+
+            <div class="legend-grid">
+
+                <div class="legend-text">
+
+                    <h2 class="section-title">
+                        Descubre la leyenda
+                    </h2>
+
+                    <p>
+                        Esta página es un homenaje en forma de parodia al espíritu de
+                        Kick Buttowski: un niño con casco, cero miedo y una lista
+                        infinita de acrobacias que nadie le pidió.
+                    </p>
+
+                    <p>
+                        Cheetah Chug es lo que pasaría si esa energía se pudiera
+                        comprar en lata. Spoiler: no se puede, y mejor así.
+                    </p>
+
+                </div>
+
+                <ol class="legend-steps">
+                    <li>
+                        <strong>Abre la lata</strong>
+                        <span>El siseo es la señal de salida.</span>
+                    </li>
+                    <li>
+                        <strong>Siente el rush</strong>
+                        <span>Tu velocidad interna despierta de golpe.</span>
+                    </li>
+                    <li>
+                        <strong>Salta sin pensar</strong>
+                        <span>Casco puesto, plan inexistente.</span>
+                    </li>
+                </ol>
+
+            </div>
+
+        </section>
+
+        <div class="warning-line" aria-hidden="true"></div>
+
+
+        <!-- LLAMADA FINAL -->
+
+        <section class="section final-cta" id="pedido">
+
+            <span class="section-label">[ ÚLTIMA ADVERTENCIA ]</span>
+
+            <h2 class="section-title">
+                ¿Listo para el salto?
+            </h2>
+
+            <p>
+                Esto es una parodia: no hay tienda ni pedidos. Pero si llegaste
+                hasta aquí, ya mereces una lata imaginaria.
+            </p>
+
+            <a class="get-xe-button" href="#inicio">
+                <span class="get-xe-text">VOLVER A LA LATA</span>
+            </a>
+
+            <a class="legend-button" href="#contacto">
+                <span class="legend-link">CONOCE A QUIEN LO HIZO</span>
+            </a>
 
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer" id="contacto">
+
+        <div class="warning-line" aria-hidden="true"></div>
+
+        <div class="footer-inner">
+
+            <div>
+                <a href="index.html" class="footer-brand">
+                    <img src="images/Logo.webp" alt="">
+                    <span>Guepardex</span>
+                </a>
+
+                <p class="footer-about">
+                    Página parodia en honor a la serie Kick Buttowski.
+                    Proyecto fan hecho por diversión y práctica de HTML y CSS.
+                </p>
+            </div>
+
+            <nav aria-label="Secciones del sitio">
+                <h2 class="footer-heading">[ NAVEGACIÓN ]</h2>
+                <ul class="footer-links">
+                    <li><a href="#xe">Cheetah Chug</a></li>
+                    <li><a href="#manifiesto">Manifiesto</a></li>
+                    <li><a href="#ingredientes">Composición</a></li>
+                    <li><a href="#incidentes">Incidentes</a></li>
+                    <li><a href="#leyenda">La leyenda</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h2 class="footer-heading">[ CREADOR ]</h2>
+                <ul class="footer-links">
+                    <li>Ismael Valdez</li>
+                    <li>
+                        <a
+                            href="https://github.com/ismaelvga"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                            github.com/ismaelvga
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.instagram.com/ismaelvga"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                <path d="M16.5 7.5v.01" />
+                            </svg>
+                            @ismaelvga
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+
+                <p>
+                    &copy; 2026 Ismael Valdez · Creada el
+                    <time datetime="2026-10-03">03/10/2026</time>
+                </p>
+
+                <p>
+                    Parodia sin fines de lucro. Kick Buttowski y sus personajes
+                    pertenecen a sus respectivos dueños.
+                </p>
+
+                <a class="back-to-top" href="#inicio">Volver arriba</a>
+
+            </div>
+        </div>
+
+    </footer>
+
 </body>
 
-</html>
+</htm
